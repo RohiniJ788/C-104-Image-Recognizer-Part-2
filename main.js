@@ -1,25 +1,24 @@
 Webcam.set({
-    width:250,
-    height:200,
-    image_format:'png',
-    png_quality:90
+width:350,
+height:300,
+image_format: 'png',
+png_quality:90
 });
 
- camera=document.getElementById("camera");
+camera=document.getElementById("camera");
 
- Webcam.attach('#camera');
+webcam.attach( '#camera' );
 
- function takeSpanShot(){
-     Webcam.snap(function(data_uri){
-    document.getElementById("result").innerHTML='<img id="captured_image" src="'+data_uri+'"/>'
-     });
- }
+function take_snapshot(){
+    webcam.snap(function(data_uri){
+        document.getElementById("result").innerHTML = '<img id="captured_image" src="'+data_uri+'"/>';
+    });
+}
 
- console.log("ml5 version",ml5.version);
+console.log('ml5 version:', ml5.version);
 
- ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/r5pYKLLph/model.json',modelLoaded);
+classifier-ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/4ptVajqpD/',modelLoaded);
 
 function modelLoaded(){
     console.log("Model is Loaded");
 }
-

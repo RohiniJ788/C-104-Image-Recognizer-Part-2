@@ -1,7 +1,6 @@
- 
 <html>
   <head>
-    <title>Image recognition</title>
+    <title>Face Recognizer Web App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -12,47 +11,42 @@
    <link rel="stylesheet" href="style.css">
   
   </head>
-
+  
   <body>
-  <div class="container">
-    
-    <center>
-
-      <h3 class="btn btn-defalut heading">Image Recognition</h3>
-      <br><br>
-
-      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
-
-      <b class="name_of_objects">
-      Water Bottle
-      <hr><br>
-      Acrylic Paint
-      <hr><br>
-      Brush Pen Set
-      <hr><br>
-      Eraser
-      </b>
-      <hr><br>
-
-      <label>Webcam View - </label>
-
-      <div id="camera"></div>
-      <br><br>
-      <div id="result"></div>
-      <br><br>
-      <button onclick="takeSpanShot()" class="btn btn-info">Capture Image</button>
-      <br><br>
-      <button onclick="checkImage()" class="btn btn-success">Identify Image</button>
-      <br><br>
+    <div class="container">
       
-      <p style="font-size: 22px;">Object :<span id="result_obejct_name"></span>  </p>
-      <p style="font-size: 22px;">Accuracy :<span id="result_object_accuracy"></span>  </p>
-    </center>
-
-  </div>
-<script src="main.js"></script>
-
-  </body>
-</html>
-
- 
+      <center>
+  
+        <h3 class="btn btn-defalut heading">Face Recognition Web App</h3>
+        <br><br>
+  
+        <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+  
+        <b class="name_of_objects">
+        <hr><br>
+        1st Sister
+        <hr><br>
+        </b>
+  
+        <label>Webcam View - </label>
+  
+        <div id="camera"></div>
+        <br><br>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="takeSpanShot()" class="btn btn-info">Capture Image</button>
+        <br><br>
+        <button onclick="checkImage()" class="btn btn-success">Identify Image</button>
+        <br><br>
+        
+        <p style="font-size: 22px;">Object :<span id="result_obejct_name"></span>  </p>
+        <p style="font-size: 22px;">Accuracy :<span id="result_object_accuracy"></span>  </p>
+      </center>
+  
+    </div>
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
